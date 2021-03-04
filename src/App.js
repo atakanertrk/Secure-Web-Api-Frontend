@@ -26,7 +26,7 @@ class App extends React.Component {
       Password: pw
     }
     console.log(LoginObject);
-    await axios.post(`https://localhost:44309/api/login`, LoginObject)
+    await axios.post(`https://server.webde.biz.tr/api/login`, LoginObject)
       .then(res => {
         bake_cookie('token', res.data.token);
         console.log(res.data.token);
@@ -49,7 +49,7 @@ class App extends React.Component {
       Password: pw
     }
     console.log(createAccObj);
-    await axios.post(`https://localhost:44309/api/signin`, createAccObj)
+    await axios.post(`https://server.webde.biz.tr/api/signin`, createAccObj)
       .then(res => {
         bake_cookie('token', res.data.token);
         console.log(res.data.token);
