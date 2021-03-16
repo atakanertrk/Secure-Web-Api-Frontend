@@ -61,7 +61,7 @@ class App extends React.Component {
         HashedUserNameAndPassword: hashedInfo
       }
       console.log(createAccObj);
-      await axios.post(`https://${constants.url}/api/signin`, createAccObj)
+      await axios.post(`https://${constants.url}/api/signup`, createAccObj)
         .then(res => {
           bake_cookie('token', res.data.token);
           this.setState({
