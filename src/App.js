@@ -87,7 +87,7 @@ class App extends React.Component {
     }
     return (
       <div className="App">
-        <h4 style={{marginTop:"10%"}}>Secure Web Application</h4>
+        <h4 style={{marginTop:"10%"}}>Secure Web Application LAST CONFIGURED : 27.03.2021 - 14:23</h4>
         <div style={{ width: "50%", marginLeft: "25%", marginTop: "4%" }}>
           <div className="form-group">
             <label>User Name</label>
